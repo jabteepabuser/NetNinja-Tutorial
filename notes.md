@@ -18,3 +18,11 @@ for(let i = 0; i < array.length; i++){
 which logs out: John, IP, Bruce
 
 
+--WHILE LOOP:
+let i = 0; *looper*
+
+while(i < 5){
+    console.log(`loop ${i}`);
+    i++;
+}
+*THIS TIME THE CONDITION IS ONLY THE ONE INSIDE THE PARENTHESIS KINDA LIKE PYTHON*
