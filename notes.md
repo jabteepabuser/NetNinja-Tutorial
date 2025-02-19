@@ -26,3 +26,31 @@ while(i < 5){
     i++;
 }
 *THIS TIME THE CONDITION IS ONLY THE ONE INSIDE THE PARENTHESIS KINDA LIKE PYTHON.*
+
+--WHILE LOOP WITH ARRAYS:
+let i = 0;
+arrayname = ['jon','man','pat']
+
+while(i < arrayname.length){
+    console.log(arrayname[i]);
+    i++;
+}
+
+which logs out: john, man, pat
+
+--IF STATEMENTS:
+example 1:
+const password = 'password';
+
+if(password == 'password'){
+    console.log('correct password');
+}
+logs out: correct password
+
+example 2:
+const age = 20;
+
+if(age < 20){
+    console.log('you are not old enough')
+}
+logs out: you are not old enough.
