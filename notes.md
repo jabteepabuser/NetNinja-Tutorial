@@ -45,12 +45,26 @@ const password = 'password';
 if(password == 'password'){
     console.log('correct password');
 }
-logs out: correct password
+else if (password == ''){
+    console.log('please enter password');
+}
+else{
+    console.log('incorrect password');
+}
 
 example 2:
 const age = 20;
 
 if(age < 20){
-    console.log('you are not old enough')
+    console.log('you are not old enough');
 }
-logs out: you are not old enough.
+else if (age = ''){
+    console.log('please enter a value');
+}
+else{
+    console.log('you are old enough');
+}
+
+--LOGICAL OPERATORS SYMBOLS
+AND = &&
+OR  = ||
