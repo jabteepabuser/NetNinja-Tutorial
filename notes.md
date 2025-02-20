@@ -9,10 +9,10 @@ for(let i = 0; i < 5; i++ or i--){
 --FOR LOOPS WITH ARRAYS:
 
 example:
-array = ['John','IP','Bruce']
+array = ['John','IP','Bruce'];
 
 for(let i = 0; i < array.length; i++){
-    console.log(array[i])
+    console.log(array[i]);
 }
 
 which logs out: John, IP, Bruce
@@ -29,7 +29,7 @@ while(i < 5){
 
 --WHILE LOOP WITH ARRAYS:
 let i = 0;
-arrayname = ['jon','man','pat']
+arrayname = ['jon','man','pat'];
 
 while(i < arrayname.length){
     console.log(arrayname[i]);
@@ -122,3 +122,36 @@ switch(grade){ similar to if else statements basically
     default:
         console.log('invalid grade');
 }
+
+
+--FUNCTIONS:
+
+let myfunction = function(input1,input2){ OK SO INPUT1 and INPUT2 ARE VARIABLES CALLED ARGUMENTS
+    console.log(`hello ${input1}, this is another input --> ${input2}`);
+};
+
+myfunction('brodie', 'idk lol') BRODIE AND IDK LOL ARE THE PARAMETERS FOR THOSE ARGUMENTS
+
+OUTPUT = hello brodie, this is another input --> idk lol
+
+--FUNCTIONS WITH DEFAULT PARAMETERS IN CASE NO PARAMETERS ARE INPUT:
+
+ let myfunction = function(input1 = 'user',input2 = 'welcome'){ HOWEVER, IF THERE ARE PARAMETERS THAT ARE INPUT INTO THE FUNCTION CALL, THESE TWO GET OVERWRITTEN.
+    console.log(`hello ${input1}, this is another input --> ${input2}`);
+};
+
+myfunction();
+OUTPUT = hello user, this is another input --> welcome
+
+
+--RETURN REFRESHER:
+let calculateArea = function(radius){
+    let area = 3.14 * radius ** 2;
+    return area; WHICH IS 78.5
+}
+
+let radiusEqualsFive = calcArea(5);
+*NOW, IN THIS CASE calcArea(5) is going to turn into 78.5*
+*GREAT, NOW WE CAN CONSOLE LOG IT INSTEAD OF DOING IT INTO THE LOCAL SCOPE OF calculateArea*
+console.log(radiusEqualsFive); -----> *78.5*
+
