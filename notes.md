@@ -42,10 +42,10 @@ which logs out: john, man, pat
 example 1:
 const password = 'password';
 
-if(password == 'password'){
+if(password === 'password'){
     console.log('correct password');
 }
-else if (password == ''){
+else if (password === ''){
     console.log('please enter password');
 }
 else{
@@ -58,7 +58,7 @@ const age = 20;
 if(age < 20){
     console.log('you are not old enough');
 }
-else if (age = ''){
+else if (age === ''){
     console.log('please enter a value');
 }
 else{
@@ -68,3 +68,39 @@ else{
 --LOGICAL OPERATORS SYMBOLS
 AND = &&
 OR  = ||
+
+--LOGICAL NOT:
+let user = false;
+
+if(user){
+    THIS WILL NOT RUN INSIDE OF HERE SINCE USER IS FALSE.
+}
+
+if(!user){
+    THIS WILL NOW RUN SINCE WE SWITCHED FALSE INTO !FALSE WHICH IS = TRUE.
+}
+
+--DOUBLE EQUALS VS TRIPLE EQUALS
+
+= means assignment
+== comparison but ignores the types
+=== also comparison however, it considers both types.
+
+therefore, === is much more preferrable in terms of comparison operators.
+
+--BREAK AND CONTINUE
+let scores = [0, 10, 20, 30, 40, 50, 100];
+
+for(i = 0; i < scores.length; i++){
+    if(scores[i] === 0){
+        continue; ignores 0 and keeps loop going.
+    }
+    
+    console.log('your score is: , scores[i]);
+    
+    if(scores[i] === 100){
+        console.log('Final score reached, GRATS!');
+        break; this stops the whole loop when condition is true.
+    }
+
+}
