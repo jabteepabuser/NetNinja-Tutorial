@@ -120,5 +120,5 @@ switch(grade){ similar to if else statements basically
         console.log('grade is C');
         break;
     default:
-        console.log('invalid grade')
+        console.log('invalid grade');
 }
