@@ -104,3 +104,21 @@ for(i = 0; i < scores.length; i++){
     }
 
 }
+
+--SWITCH CASE:
+
+let grade = prompt('Enter Grade')
+
+switch(grade){ similar to if else statements basically
+    case 'A': 
+        console.log('grade is A');
+        break; this uses break so that it does not execute ones below and this code block stops.
+    case 'B':
+        console.log('grade is B');
+        break;
+    case 'C':
+        console.log('grade is C');
+        break;
+    default:
+        console.log('invalid grade')
+}
