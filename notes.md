@@ -170,10 +170,18 @@ let/const VariableName = ANYPARAMETER => {
 ARROW FUNCTION WITH ONLY ONE SINGLE RETURN CODE:
 *BEFORE SIMPLIFICATION*
 let/const VariableName = ANYPARAMETER => {
-    return 5 * ANYPARAMETER
+    return 5 * ANYPARAMETER;
 }
 
 *AFTER SIMPLIFICATION*
 let/const VariableName = ANYPARAMETER => 5 * ANYPARAMETER
 *In this case, we removed the {} and put the code inside of it after the =>*
 
+
+*EXAMPLE WHERE THIS DOES NOT WORK*
+const bill = (products, tax) => {
+    let total = 0;
+    for(let i = 0; i < products.length; i++){
+        total += products[i] + products[i] * tax;
+    }
+} return total; *THERE IS MORE THAN 1 LINES OF CODE INTO THIS BLOCK SO THIS DOES NOT WORK.*
