@@ -158,11 +158,22 @@ console.log(radiusEqualsFive); -----> *78.5*
 --ARROW FUNCTIONS:
 
 EXAMPLE STRUCTURE
-let/const VariableName = (ANY PARAMETERS) => {
+let/const VariableName = (ANYPARAMETERS) => {
     console.log(example code);
 }
 
 ARROW FUNCTION WITH ONLY ONE PARAMETER: *The difference here is that the parentheses are unnecessary*
-let/const VariableName = ANY PARAMETER => {
+let/const VariableName = ANYPARAMETER => {
     console.log(example code);
 }
+
+ARROW FUNCTION WITH ONLY ONE SINGLE RETURN CODE:
+*BEFORE SIMPLIFICATION*
+let/const VariableName = ANYPARAMETER => {
+    return 5 * ANYPARAMETER
+}
+
+*AFTER SIMPLIFICATION*
+let/const VariableName = ANYPARAMETER => 5 * ANYPARAMETER
+*In this case, we removed the {} and put the code inside of it after the =>*
+
