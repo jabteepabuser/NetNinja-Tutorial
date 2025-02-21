@@ -155,3 +155,14 @@ let radiusEqualsFive = calcArea(5);
 *GREAT, NOW WE CAN CONSOLE LOG IT INSTEAD OF DOING IT INTO THE LOCAL SCOPE OF calculateArea*
 console.log(radiusEqualsFive); -----> *78.5*
 
+--ARROW FUNCTIONS:
+
+EXAMPLE STRUCTURE
+let/const VariableName = (ANY PARAMETERS) => {
+    console.log(example code);
+}
+
+ARROW FUNCTION WITH ONLY ONE PARAMETER: *The difference here is that the parentheses are unnecessary*
+let/const VariableName = ANY PARAMETER => {
+    console.log(example code);
+}
