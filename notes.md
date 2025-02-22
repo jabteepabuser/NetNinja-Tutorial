@@ -162,12 +162,12 @@ let/const VariableName = (ANYPARAMETERS) => {
     console.log(example code);
 }
 
-ARROW FUNCTION WITH ONLY ONE PARAMETER: *The difference here is that the parentheses are unnecessary*
+--ARROW FUNCTION WITH ONLY ONE PARAMETER: *The difference here is that the parentheses are unnecessary*
 let/const VariableName = ANYPARAMETER => {
     console.log(example code);
 }
 
-ARROW FUNCTION WITH ONLY ONE SINGLE RETURN CODE:
+--ARROW FUNCTION WITH ONLY ONE SINGLE RETURN CODE:
 *BEFORE SIMPLIFICATION*
 let/const VariableName = ANYPARAMETER => {
     return 5 * ANYPARAMETER;
@@ -185,3 +185,35 @@ const bill = (products, tax) => {
         total += products[i] + products[i] * tax;
     }
 } return total; *THERE IS MORE THAN 1 LINES OF CODE INTO THIS BLOCK SO THIS DOES NOT WORK.*
+
+--CALLBACK FUNCTIONS:
+// callback = a function that is passed as an argument
+//                    to another function.
+
+//                    used to handle asynchronous operations:
+//                    1. Reading a file
+//                    2. Network requests
+//                    3. Interacting with databases
+
+//                    "Hey, when you're done, call this next."
+
+
+
+let sum = (callbackFunc) => {
+    let value = 5;
+    callbackFunc(value); 
+}
+*THERE IS NO NAME FOR THIS FUNCTION THAT WE PASSED AS AN ARGUMENT.* 
+*BUT ITS STILL A FUNCTION*
+sum(value => { 
+    console.log(value);
+});
+
+--FOREACH FUNCTIONS:
+
+let people = ['john', 'wanker','willy']
+
+people.forEach((person) => {
+    console.log(person);
+    //do something else for each cell.
+})
