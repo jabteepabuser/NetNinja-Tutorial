@@ -217,3 +217,9 @@ people.forEach((person) => {
     console.log(person);
     //do something else for each cell.
 })
+
+*ADDING THE INDEX PARAMETER*
+people.forEach((person, index) => {
+    console.log(index, person);
+    //do something else for each cell.
+})
