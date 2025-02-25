@@ -1,4 +1,4 @@
---FOR LOOPS:
+--//FOR LOOPS:
 for(*initialize the counter*;*condition*;*increment or decrement after each iteration*){ the operation will be placed here.}
 
 example:
@@ -6,7 +6,7 @@ for(let i = 0; i < 5; i++ or i--){
     console.log(i)
 }
 
---FOR LOOPS WITH ARRAYS:
+--//FOR LOOPS WITH ARRAYS:
 
 example:
 array = ['John','IP','Bruce'];
@@ -18,7 +18,7 @@ for(let i = 0; i < array.length; i++){
 which logs out: John, IP, Bruce
 
 
---WHILE LOOP:
+--//WHILE LOOP:
 let i = 0; *looper*
 
 while(i < 5){
@@ -27,7 +27,7 @@ while(i < 5){
 }
 *THIS TIME THE CONDITION IS ONLY THE ONE INSIDE THE PARENTHESIS KINDA LIKE PYTHON.*
 
---WHILE LOOP WITH ARRAYS:
+--//WHILE LOOP WITH ARRAYS:
 let i = 0;
 arrayname = ['jon','man','pat'];
 
@@ -38,7 +38,7 @@ while(i < arrayname.length){
 
 which logs out: john, man, pat
 
---IF STATEMENTS:
+--//IF STATEMENTS:
 example 1:
 const password = 'password';
 
@@ -65,11 +65,11 @@ else{
     console.log('you are old enough');
 }
 
---LOGICAL OPERATORS SYMBOLS
+--//LOGICAL OPERATORS SYMBOLS
 AND = &&
 OR  = ||
 
---LOGICAL NOT:
+--//LOGICAL NOT:
 let user = false;
 
 if(user){
@@ -80,7 +80,7 @@ if(!user){
     THIS WILL NOW RUN SINCE WE SWITCHED FALSE INTO !FALSE WHICH IS = TRUE.
 }
 
---DOUBLE EQUALS VS TRIPLE EQUALS
+--//DOUBLE EQUALS VS TRIPLE EQUALS
 
 = means assignment
 == comparison but ignores the types
@@ -88,7 +88,7 @@ if(!user){
 
 therefore, === is much more preferrable in terms of comparison operators.
 
---BREAK AND CONTINUE
+--//BREAK AND CONTINUE
 let scores = [0, 10, 20, 30, 40, 50, 100];
 
 for(i = 0; i < scores.length; i++){
@@ -105,7 +105,7 @@ for(i = 0; i < scores.length; i++){
 
 }
 
---SWITCH CASE:
+--//SWITCH CASE:
 
 let grade = prompt('Enter Grade')
 
@@ -124,7 +124,7 @@ switch(grade){ similar to if else statements basically
 }
 
 
---FUNCTIONS:
+--//FUNCTIONS:
 
 let myfunction = function(input1,input2){ OK SO INPUT1 and INPUT2 ARE VARIABLES CALLED ARGUMENTS
     console.log(`hello ${input1}, this is another input --> ${input2}`);
@@ -134,7 +134,7 @@ myfunction('brodie', 'idk lol') BRODIE AND IDK LOL ARE THE PARAMETERS FOR THOSE 
 
 OUTPUT = hello brodie, this is another input --> idk lol
 
---FUNCTIONS WITH DEFAULT PARAMETERS IN CASE NO PARAMETERS ARE INPUT:
+--//FUNCTIONS WITH DEFAULT PARAMETERS IN CASE NO PARAMETERS ARE INPUT:
 
  let myfunction = function(input1 = 'user',input2 = 'welcome'){ HOWEVER, IF THERE ARE PARAMETERS THAT ARE INPUT INTO THE FUNCTION CALL, THESE TWO GET OVERWRITTEN.
     console.log(`hello ${input1}, this is another input --> ${input2}`);
@@ -144,7 +144,7 @@ myfunction();
 OUTPUT = hello user, this is another input --> welcome
 
 
---RETURN REFRESHER:
+--//RETURN REFRESHER:
 let calculateArea = function(radius){
     let area = 3.14 * radius ** 2;
     return area; WHICH IS 78.5
@@ -155,19 +155,19 @@ let radiusEqualsFive = calcArea(5);
 *GREAT, NOW WE CAN CONSOLE LOG IT INSTEAD OF DOING IT INTO THE LOCAL SCOPE OF calculateArea*
 console.log(radiusEqualsFive); -----> *78.5*
 
---ARROW FUNCTIONS:
+--//ARROW FUNCTIONS:
 
 EXAMPLE STRUCTURE
 let/const VariableName = (ANYPARAMETERS) => {
     console.log(example code);
 }
 
---ARROW FUNCTION WITH ONLY ONE PARAMETER: *The difference here is that the parentheses are unnecessary*
+--//ARROW FUNCTION WITH ONLY ONE PARAMETER: *The difference here is that the parentheses are unnecessary*
 let/const VariableName = ANYPARAMETER => {
     console.log(example code);
 }
 
---ARROW FUNCTION WITH ONLY ONE SINGLE RETURN CODE:
+--//ARROW FUNCTION WITH ONLY ONE SINGLE RETURN CODE:
 *BEFORE SIMPLIFICATION*
 let/const VariableName = ANYPARAMETER => {
     return 5 * ANYPARAMETER;
@@ -186,7 +186,7 @@ const bill = (products, tax) => {
     }
 } return total; *THERE IS MORE THAN 1 LINES OF CODE INTO THIS BLOCK SO THIS DOES NOT WORK.*
 
---CALLBACK FUNCTIONS:
+--//CALLBACK FUNCTIONS:
 // callback = a function that is passed as an argument
 //                    to another function.
 
@@ -209,7 +209,7 @@ sum(value => {
     console.log(value);
 });
 
---FOREACH FUNCTIONS:
+--//FOREACH FUNCTIONS:
 
 let people = ['john', 'wanker','willy']
 
@@ -223,3 +223,20 @@ people.forEach((person, index) => {
     console.log(index, person);
     //do something else for each cell.
 })
+
+
+--//CREATING OBJECTS, BASICALLY KINDA LIKE DICTIONARIES.
+let user = {
+    name: 'alfred',
+    age: 45,
+    email: 'alfred@email.com',
+    location: 'USSR',
+    likes: ['sparring', 'marmalade']
+};
+
+//display a specific attribute
+console.log(user.likes);
+
+//modify an attribute within an object
+user.age = 20;
+console.log(user.age)
