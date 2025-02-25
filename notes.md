@@ -240,3 +240,31 @@ console.log(user.likes);
 //modify an attribute within an object
 user.age = 20;
 console.log(user.age)
+
+--//CREATING METHODS OR FUNCTIONS INSIDE OBJECTS:
+
+let user = {
+    name: 'alfred',
+    loginMethod: () =>{
+        console.log('user logged in.')
+    },
+    logoutMethod: () =>{
+        console.log('user logged out.')
+    }
+};
+
+user.loginMethod();
+user.logoutMethod();
+
+--// THE 'THIS' KEYWORD:
+let user = {
+    likes: ['sparring', 'marmalade'],
+    logLikes: function(){  //ARROW FUNC CANNOR BE USED!!
+        this.likes.forEach(like =>{ //IF 'THIS' IS USED.
+            console.log(like);
+        });
+    }
+}
+
+
+user.logLikes();
