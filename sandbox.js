@@ -1,14 +1,9 @@
-const content = document.querySelectorAll('p');
+const thebutton = document.querySelector('button.stupidButton'); 
+const banner = document.querySelector('span#banner');
 
-content.forEach(item =>{
-    if(item.textContent.includes('error')){
-        item.classList.add('error');
-    }
-    else if(item.textContent.includes('success')){
-        item.classList.add('success');
-    }
-    else{
-        item.classList.add('normal');
-    }
+thebutton.addEventListener('click', () =>{
+    banner.innerText += 'NIGGER';
+
 });
+
 

@@ -2,7 +2,15 @@ body {
     background-color: rgb(235, 193, 193);
 }
 
-.nigga {
+#nigga {
     text-align: center;
     color: blueviolet;
-}   
+}
+
+#banner{
+    background-color: rgb(253, 253, 253);
+}
+
+#eventStuff{
+    text-align: center;
+}

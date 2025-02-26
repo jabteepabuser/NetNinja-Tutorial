@@ -284,3 +284,16 @@ content.forEach(item =>{ *SINCE WE USED QUERYSELECTOR WE CAN ITERATE USING FOREA
         item.classList.add('normal'); *ELSE JUST ADD NORMAL*
     }
 });
+
+--// ADDING CLICK EVENT LISTENERS:
+
+const thebutton = document.querySelector('button.stupidButton'); *QUERY THE BUTTON*
+const banner = document.querySelector('span#banner');  *QUERY ALSO THE BANNER TO CHANGE TEXT ONCLICK*
+
+thebutton.addEventListener('click', () =>{ *IF THE BUTTON IS CLICKED EXECUTE THIS CALLBACK FUNC!*
+    banner.innerText += 'NIGGER'; *ADD THE TEXT 'NIGGER' IN THE INNERTEXT OF THE SPAN CALLED BANNER*
+
+});
+
+
+--// 
