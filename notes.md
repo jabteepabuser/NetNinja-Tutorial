@@ -268,3 +268,19 @@ let user = {
 
 
 user.logLikes();
+
+--// ADDING, LOOPING, QUERYING MULTIPLE TAGS USING DOM:
+
+const content = document.querySelectorAll('p'); *GRAB ALL P ELEMENTS*
+
+content.forEach(item =>{ *SINCE WE USED QUERYSELECTOR WE CAN ITERATE USING FOREACH()*
+    if(item.textContent.includes('error')){ *WE ARE ITERATING AND IF THE TEXT INSIDE OUR ITEM INCLUDES ERROR*
+        item.classList.add('error'); *THEN WE ARE ADDING A CLASS CALLED ERROR WITHIN IT.*
+    }
+    else if(item.textContent.includes('success')){ *SAME WITH THIS ONE BUT WITH SUCCESS ON IT*
+        item.classList.add('success');
+    }
+    else{
+        item.classList.add('normal'); *ELSE JUST ADD NORMAL*
+    }
+});
