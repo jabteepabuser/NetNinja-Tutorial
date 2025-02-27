@@ -1,3 +1,21 @@
 body {
     background-color: rgb(235, 193, 193);
 }
+
+form{
+    max-width: 200px;
+    margin: 40px auto;
+    background-color: orange;
+    padding: 10px;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    padding: 4px;
+}
+
+
+
+
+
