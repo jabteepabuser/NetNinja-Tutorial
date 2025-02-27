@@ -14,3 +14,12 @@ body {
 #eventStuff{
     text-align: center;
 }
+
+.pending{
+    padding: 10px;
+    border: 10px;
+    border-style:solid;
+    background-color: beige;
+    
+}
+

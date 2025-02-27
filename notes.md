@@ -296,4 +296,12 @@ thebutton.addEventListener('click', () =>{ *IF THE BUTTON IS CLICKED EXECUTE THI
 });
 
 
---// 
+--// ADDING CLICK EVENTS FROM MULTIPLE ELEMENTS:
+
+const items = document.querySelectorAll('li.pending')
+
+items.forEach(item =>{
+    item.addEventListener('click', ()=>{
+        console.log('an item is clicked.');
+    });
+});
